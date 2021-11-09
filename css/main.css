@@ -1,0 +1,159 @@
+small {
+  color: #5692e8;
+  margin-left: 50px;
+}
+
+ul {
+  display: block;
+  list-style: square;
+}
+ul li {
+  margin-left: 1.5rem;
+  color: #5692e8;
+}
+
+li span {
+  color: #434a54;
+}
+
+.timeline {
+  border-left: 2px solid #e6e9ed;
+  padding: 1rem 0;
+}
+
+.timeline-card-education {
+  position: relative;
+  margin-left: 31px;
+  border-left: 2px solid;
+  margin-bottom: 2rem;
+}
+
+.timeline-card-work {
+  position: relative;
+  margin-left: 31px;
+  border-left: 2px solid;
+  margin-bottom: 2rem;
+}
+
+.timeline-card-education:before {
+  content: "🎓";
+  position: absolute;
+  top: 20px;
+  left: -40px;
+
+  z-index: 2;
+}
+
+.timeline-card-education:after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  width: 28px;
+  height: 2px;
+  top: 28px;
+  left: -29px;
+  z-index: 1;
+}
+
+.timeline-card-work:before {
+  content: "💼";
+  position: absolute;
+  top: 20px;
+  left: -40px;
+
+  z-index: 2;
+}
+
+.timeline-card-work:after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  width: 28px;
+  height: 2px;
+  top: 28px;
+  left: -29px;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.cover {
+  border-radius: 10px;
+}
+
+.cover-bg {
+  background-color: #5692e8;
+  border-radius: 10px 10px 0 0;
+}
+
+.circle-img {
+  max-width: 150px;
+  max-height: 210px;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    margin-bottom: -80px;
+    margin-left: 0;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .container {
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+  }
+  .cover,
+  .cover-bg {
+    border-radius: 0;
+  }
+  .cover.shadow-lg {
+    box-shadow: none !important;
+  }
+  .cover-bg {
+    padding: 5rem !important;
+    padding-bottom: 10px !important;
+  }
+
+  .section1 {
+    padding: 6.5rem 5rem 2rem !important;
+  }
+  .section2 {
+    padding: 1.5rem 5rem 2rem !important;
+  }
+  .page-break {
+    padding-top: 5rem;
+    page-break-before: always;
+  }
+}
+
+footer {
+  position: relative;
+  top: auto;
+  width: 100%;
+  display: block;
+  padding-top: 50px;
+}
